@@ -10,18 +10,76 @@ const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mon
 export const metadata: Metadata = {
   metadataBase: new URL('https://base64tools.org'),
   title: {
-    default: 'Base64 Encoder & Decoder for Developers',
+    default: 'Base64Tools.org - Professional Base64 Encoder & Decoder for Developers',
     template: '%s | Base64Tools.org'
   },
   description: 'Lightning-fast Base64 encoding and decoding tools built for developers. Encode text, images, files with zero latency. 100% client-side processing. Privacy-first.',
+  keywords: 'base64 encoder, base64 decoder, encode base64, decode base64, base64 converter, online base64, base64 tool',
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://base64tools.org',
+    siteName: 'Base64Tools.org',
+    title: 'Base64Tools.org - Professional Base64 Tools',
+    description: 'Lightning-fast Base64 encoding and decoding. Built for developers who demand speed and privacy.',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Base64Tools.org' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Base64Tools.org - Developer Tools',
+    description: 'Lightning-fast Base64 tools for developers',
+    images: ['/og-image.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'WebApplication',
+              name: 'Base64Tools.org',
+              description: 'Free online Base64 encoder and decoder tools for developers',
+              url: 'https://base64tools.org',
+              applicationCategory: 'UtilitiesApplication',
+              operatingSystem: 'Any',
+              browserRequirements: 'Requires JavaScript. Requires HTML5.',
+              offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+              creator: {
+                '@type': 'Person',
+                name: 'Yokesh Chowdary',
+                email: 'bollineniyokesh@gmail.com',
+              },
+              featureList: [
+                'Base64 Text Encoder',
+                'Base64 Text Decoder',
+                'Image to Base64 Converter',
+                'Base64 to Image Decoder',
+                'File to Base64 Encoder',
+                'URL-Safe Base64 Encoder',
+              ],
+            }),
+          }}
+        />
+      </head>
       <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans bg-bg-primary`}>
         <div className="relative min-h-screen">
-          {/* Subtle Background Accents */}
           <div className="fixed inset-0 overflow-hidden pointer-events-none opacity-30">
             <div className="absolute top-0 right-0 w-96 h-96 bg-accent-turquoise/5 rounded-full blur-3xl" />
             <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent-blue/5 rounded-full blur-3xl" />
@@ -32,18 +90,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             {children}
           </main>
           
-          {/* Footer - Compact Version */}
-          <footer className="relative z-10 bg-bg-secondary border-t border-border-light mt-20">
-            <div className="container mx-auto px-4 py-8">
-              <div className="grid md:grid-cols-2 gap-8 mb-6">
-                {/* Left: Brand + Tools */}
+          {/* Compact Footer */}
+          <footer className="relative z-10 bg-bg-secondary border-t border-border-light mt-12">
+            <div className="container mx-auto px-4 py-6">
+              <div className="grid md:grid-cols-2 gap-6 mb-4">
                 <div>
-                  <div className="flex items-center gap-3 mb-4">
+                  <div className="flex items-center gap-3 mb-3">
                     <div className="w-8 h-8 bg-gradient-to-br from-accent-turquoise to-accent-blue rounded-lg flex items-center justify-center text-sm text-white font-bold">
                       B64
                     </div>
                     <div>
-                      <h3 className="text-text-primary font-bold">Base64Tools.org</h3>
+                      <h3 className="text-text-primary font-bold text-sm">Base64Tools.org</h3>
                       <p className="text-xs text-text-tertiary">Privacy-First Developer Tools</p>
                     </div>
                   </div>
@@ -66,9 +123,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   </div>
                 </div>
 
-                {/* Right: Privacy Features */}
                 <div>
-                  <h4 className="text-text-primary font-semibold mb-3 text-sm">Why Choose Us?</h4>
+                  <h4 className="text-text-primary font-semibold mb-2 text-sm">Why Choose Us?</h4>
                   <div className="grid grid-cols-2 gap-2 text-xs text-text-secondary">
                     <div className="flex items-center gap-2">
                       <span className="w-1.5 h-1.5 bg-accent-green rounded-full"></span>
@@ -90,8 +146,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </div>
               </div>
 
-              {/* Bottom Bar - Single Line */}
-              <div className="border-t border-border-light pt-4 flex flex-col md:flex-row justify-between items-center gap-2 text-xs">
+              {/* Compact Bottom Bar */}
+              <div className="border-t border-border-light pt-3 flex flex-col md:flex-row justify-between items-center gap-2 text-xs">
                 <p className="text-text-tertiary text-center md:text-left">
                   © 2025 Base64Tools.org
                 </p>

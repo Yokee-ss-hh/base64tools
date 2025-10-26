@@ -1,0 +1,6 @@
+# robots.txt for base64tools.org
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://base64tools.org/sitemap.xml

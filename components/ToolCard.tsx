@@ -28,7 +28,7 @@ export default function ToolCard({ title, description, icon, gradient, href }: T
           <p className="text-text-secondary text-sm mb-4">
             {description}
           </p>
-          <div className="flex items-center text-accent-turquoise text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
+          <div className="flex items-center text-accent-turquoise text-sm font-semibold">
             Try it now
             <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform" />
           </div>
