@@ -10,7 +10,7 @@ const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mon
 export const metadata: Metadata = {
   metadataBase: new URL('https://base64tools.org'),
   title: {
-    default: 'Base64Tools.org - Professional Base64 Encoder & Decoder for Developers',
+    default: 'Base64 Encoder & Decoder for Developers',
     template: '%s | Base64Tools.org'
   },
   description: 'Lightning-fast Base64 encoding and decoding tools built for developers. Encode text, images, files with zero latency. 100% client-side processing. Privacy-first.',
