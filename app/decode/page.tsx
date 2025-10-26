@@ -147,8 +147,6 @@ export default function DecodePage() {
             </div>
           </div>
         </div>
-
-        <AdSlot position="bottom" />
       </div>
     </div>
   )
