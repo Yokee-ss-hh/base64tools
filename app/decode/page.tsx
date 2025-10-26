@@ -3,7 +3,6 @@
 import { useState } from 'react'
 import { Copy, Check, Zap, Shield, Code } from 'lucide-react'
 import { Metadata } from 'next'
-import AdSlot from '@/components/AdSlot'
 
 export default function DecodePage() {
   const [inputText, setInputText] = useState('')
