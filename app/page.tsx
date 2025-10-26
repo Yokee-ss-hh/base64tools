@@ -127,7 +127,6 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-6">
-            {/* Input */}
             <div>
               <label className="block text-xs md:text-sm font-semibold text-text-primary mb-2 md:mb-3 flex items-center gap-2">
                 <span className="w-2 h-2 bg-accent-turquoise rounded-full"></span>
@@ -144,7 +143,6 @@ export default function Home() {
               />
             </div>
 
-            {/* Output */}
             <div>
               <label className="block text-xs md:text-sm font-semibold text-text-primary mb-2 md:mb-3 flex items-center gap-2">
                 <span className="w-2 h-2 bg-accent-green rounded-full"></span>
@@ -169,7 +167,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
             <button
               onClick={handleProcess}
@@ -197,7 +194,6 @@ export default function Home() {
             </button>
           </div>
 
-          {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mt-6 md:mt-8 pt-6 md:pt-8 border-t border-border-light">
             <div className="text-center">
               <div className="text-xl md:text-2xl font-bold text-accent-turquoise">{inputText.length}</div>
@@ -218,7 +214,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Other Tools Grid */}
+        {/* Other Tools */}
         <div className="mt-16 md:mt-20">
           <div className="text-center mb-8 md:mb-12 px-4">
             <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-3 md:mb-4">
@@ -235,58 +231,68 @@ export default function Home() {
           </div>
         </div>
 
-        {/* SEO Content Section */}
+        {/* SEO Content - H1 Keywords Matched */}
         <div className="mt-20 bg-white rounded-2xl border border-border-light p-6 md:p-8">
           <h2 className="text-2xl md:text-3xl font-bold text-text-primary mb-6">
-            Why Use Base64 Encoding?
+            About Our Free Online Base64 Encoder and Decoder Tool
           </h2>
           
           <div className="prose max-w-none text-text-secondary space-y-6">
             <div>
-              <h3 className="text-lg md:text-xl font-semibold text-text-primary mb-3">What is Base64?</h3>
+              <h3 className="text-lg md:text-xl font-semibold text-text-primary mb-3">What is Base64 Encoding?</h3>
               <p className="text-sm md:text-base">
+                Our <strong>free online Base64 encoder and decoder tool</strong> is designed specifically for developers and technical professionals. 
                 Base64 is a binary-to-text encoding scheme that converts binary data into an ASCII string format. 
-                It's essential for developers working with data transmission over text-based protocols, email systems, 
-                and web applications.
+                This <strong>Base64 tool</strong> makes it easy to encode and decode data instantly, with 100% client-side processing 
+                for maximum privacy and security. Whether you need to <strong>convert text to Base64</strong> or <strong>decode Base64 strings</strong>, 
+                our tool handles it all efficiently.
               </p>
             </div>
 
             <div>
-              <h3 className="text-lg md:text-xl font-semibold text-text-primary mb-3">Common Use Cases</h3>
+              <h3 className="text-lg md:text-xl font-semibold text-text-primary mb-3">Common Use Cases for Base64 Encoding</h3>
               <ul className="list-disc list-inside space-y-2 text-sm md:text-base">
-                <li><strong>Email Attachments:</strong> MIME encoding for safe email transmission</li>
-                <li><strong>Data URIs:</strong> Embedding images directly in HTML/CSS</li>
-                <li><strong>API Integration:</strong> Encoding credentials for Basic Authentication</li>
-                <li><strong>Web Development:</strong> Safe transmission of binary data in JSON/XML</li>
-                <li><strong>JWT Tokens:</strong> Encoding headers and payloads for web security</li>
+                <li><strong>Email Attachments:</strong> Use our Base64 encoder for MIME encoding and safe email transmission</li>
+                <li><strong>Data URIs:</strong> Encode images to Base64 for embedding directly in HTML/CSS</li>
+                <li><strong>API Integration:</strong> Encode credentials for Basic Authentication with our online tool</li>
+                <li><strong>Web Development:</strong> Safe transmission of binary data in JSON/XML using Base64 encoding</li>
+                <li><strong>JWT Tokens:</strong> Encode headers and payloads for web security applications</li>
               </ul>
             </div>
 
             <div>
-              <h3 className="text-lg md:text-xl font-semibold text-text-primary mb-3">Why Choose Base64Tools.org?</h3>
+              <h3 className="text-lg md:text-xl font-semibold text-text-primary mb-3">Why Use Our Free Online Base64 Encoder Tool?</h3>
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="bg-bg-secondary rounded-lg p-4">
-                  <h4 className="font-semibold text-text-primary mb-2 text-sm md:text-base">🔒 100% Private</h4>
-                  <p className="text-xs md:text-sm">All processing happens in your browser. Your data never touches our servers.</p>
+                  <h4 className="font-semibold text-text-primary mb-2 text-sm md:text-base">🔒 100% Private & Secure</h4>
+                  <p className="text-xs md:text-sm">
+                    All Base64 encoding and decoding happens in your browser. Your data never touches our servers.
+                  </p>
                 </div>
                 <div className="bg-bg-secondary rounded-lg p-4">
-                  <h4 className="font-semibold text-text-primary mb-2 text-sm md:text-base">⚡ Lightning Fast</h4>
-                  <p className="text-xs md:text-sm">Instant encoding and decoding with optimized algorithms.</p>
+                  <h4 className="font-semibold text-text-primary mb-2 text-sm md:text-base">⚡ Lightning Fast Encoder</h4>
+                  <p className="text-xs md:text-sm">
+                    Instant Base64 encoding and decoding with optimized algorithms.
+                  </p>
                 </div>
                 <div className="bg-bg-secondary rounded-lg p-4">
-                  <h4 className="font-semibold text-text-primary mb-2 text-sm md:text-base">📱 Mobile Friendly</h4>
-                  <p className="text-xs md:text-sm">Works perfectly on all devices - desktop, tablet, and mobile.</p>
+                  <h4 className="font-semibold text-text-primary mb-2 text-sm md:text-base">📱 Mobile-Friendly Tool</h4>
+                  <p className="text-xs md:text-sm">
+                    Our Base64 encoder works perfectly on all devices.
+                  </p>
                 </div>
                 <div className="bg-bg-secondary rounded-lg p-4">
-                  <h4 className="font-semibold text-text-primary mb-2 text-sm md:text-base">🆓 Always Free</h4>
-                  <p className="text-xs md:text-sm">No registration, no limits, no hidden fees.</p>
+                  <h4 className="font-semibold text-text-primary mb-2 text-sm md:text-base">🆓 Completely Free</h4>
+                  <p className="text-xs md:text-sm">
+                    Use our online Base64 tool with no registration or limits.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* How to Use Section */}
+        {/* How to Use */}
         <div className="mt-6 bg-white rounded-2xl border border-border-light p-6 md:p-8">
           <h2 className="text-2xl md:text-3xl font-bold text-text-primary mb-6">
             How to Use the Base64 Encoder and Decoder
@@ -298,11 +304,11 @@ export default function Home() {
                 <span className="text-2xl">🔒</span> Encoding Text to Base64
               </h3>
               <ol className="list-decimal list-inside space-y-2 text-sm text-text-secondary">
-                <li>Click the "Encode" button</li>
+                <li>Click the "Encode" button on our free tool</li>
                 <li>Paste or type your text in the input field</li>
                 <li>Click "Encode to Base64" button</li>
-                <li>Your Base64 encoded string appears in the output</li>
-                <li>Click "Copy" to copy the result to clipboard</li>
+                <li>Your Base64 encoded string appears instantly</li>
+                <li>Click "Copy" to use the encoded result</li>
               </ol>
             </div>
             
@@ -312,30 +318,29 @@ export default function Home() {
               </h3>
               <ol className="list-decimal list-inside space-y-2 text-sm text-text-secondary">
                 <li>Click the "Decode" button</li>
-                <li>Paste your Base64 string in the input field</li>
-                <li>Click "Decode from Base64" button</li>
-                <li>Your decoded text appears in the output</li>
-                <li>Click "Copy" to copy the decoded text</li>
+                <li>Paste your Base64 string</li>
+                <li>Click "Decode from Base64"</li>
+                <li>Your decoded text appears</li>
+                <li>Copy the result as needed</li>
               </ol>
             </div>
           </div>
         </div>
 
-        {/* FAQ Section */}
+        {/* FAQ - H1 Keywords */}
         <div className="mt-6 bg-white rounded-2xl border border-border-light p-6 md:p-8">
           <h2 className="text-2xl md:text-3xl font-bold text-text-primary mb-6">
-            Frequently Asked Questions About Base64 Encoding
+            Frequently Asked Questions About Our Base64 Encoder and Decoder
           </h2>
           
           <div className="space-y-6">
             <div>
               <h3 className="text-lg font-semibold text-text-primary mb-2">
-                What is Base64 encoding used for?
+                What is this free online Base64 encoder and decoder tool used for?
               </h3>
               <p className="text-sm text-text-secondary">
-                Base64 encoding is used to convert binary data into text format for safe transmission over text-based protocols. 
-                Common uses include email attachments (MIME), embedding images in HTML/CSS (data URIs), API authentication, 
-                and encoding data for JSON/XML transmission.
+                Our <strong>free online Base64 encoder and decoder tool</strong> converts binary data into text format 
+                for safe transmission. Common uses include email attachments, data URIs, and API authentication.
               </p>
             </div>
             
@@ -344,28 +349,27 @@ export default function Home() {
                 Is Base64 encoding secure?
               </h3>
               <p className="text-sm text-text-secondary">
-                Base64 is NOT encryption - it's simply an encoding method. Anyone can decode Base64 strings. 
-                Never use Base64 alone for sensitive data. For secure data, use proper encryption methods like AES or RSA.
+                Base64 is NOT encryption. Anyone can decode Base64 strings using tools like ours. 
+                Use proper encryption (AES/RSA) for sensitive data.
               </p>
             </div>
             
             <div>
               <h3 className="text-lg font-semibold text-text-primary mb-2">
-                Can I encode images to Base64?
+                Can I encode images using this tool?
               </h3>
               <p className="text-sm text-text-secondary">
                 Yes! Use our <Link href="/image" className="text-accent-turquoise hover:underline">Image to Base64 converter</Link> to 
-                encode PNG, JPG, GIF, or SVG images into Base64 data URIs.
+                encode PNG, JPG, GIF, or SVG images.
               </p>
             </div>
             
             <div>
               <h3 className="text-lg font-semibold text-text-primary mb-2">
-                Is my data safe when using this tool?
+                Is my data safe using this online encoder?
               </h3>
               <p className="text-sm text-text-secondary">
-                Absolutely! All encoding and decoding happens 100% in your browser using JavaScript. 
-                Your data never leaves your computer or gets sent to our servers.
+                Absolutely! All encoding happens 100% in your browser. Your data never leaves your computer.
               </p>
             </div>
           </div>
